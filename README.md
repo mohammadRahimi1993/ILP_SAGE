@@ -1,5 +1,4 @@
 # 🛠️ Environment Setup Guide (Improved & GitHub‑Ready)
-
 This guide provides a clean, structured, and GitHub‑friendly setup process for building a Python 3.12 environment with Jupyter Notebook, along with essential machine learning and graph processing libraries.
 
 ---
@@ -7,30 +6,15 @@ This guide provides a clean, structured, and GitHub‑friendly setup process for
 ## 📦 1. Build the Base Environment
 
 ```bash
-# Pull the official Python 3.12 Docker image
 docker pull python:3.12
-
-# Switch to root user
 su
-
-# Update package list
 apt update
-
-# Install sudo
 apt install sudo
-
-# Install Python and pip
 apt install python3
 apt install python3-pip
-
-# Install nano and create a test script
 apt install nano
 echo 'print("Mohammad-Rahimi")' > test.py
-
-# Install Jupyter Notebook
 apt install jupyter
-
-# Install Git
 apt update && apt install -y git
 ```
 
@@ -66,25 +50,16 @@ pip install \
 ```
 
 ## 📊 4.Running GraphSAGE and ILP-SAGE Frameworks
-Clone the repository from GitHub
+Clone the repository from GitHub and navigate to the code directory.
 ```bash
 git clone https://github.com/mohammadRahimi1993/ILP_SAGE
-```
-
-Navigate to Code Directory
-Change to the code directory
-```bash
 cd ILP-SAGE-Version2
 ```
 
-Run ILP-SAGE Framework
+Run ILP-SAGE Framework And GraphSAGE-based Framework
 ```bash
 python main_analysis.py
 python run_experiments.py
-```
-
-Run GraphSAGE-based Framework
-```bash
 python GraphSAGE.py
 ```
 
