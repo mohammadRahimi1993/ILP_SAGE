@@ -1,30 +1,33 @@
-## 📚 ILP-SAGE: A Sampling-Based Framework for Scalable Inductive Link Prediction 
+## 📚 ILP-SAGE: A Sampling-Based Framework for Scalable Inductive Link Prediction
+
+> **Published in Neurocomputing (2026)**
 
 ## Abstract
+
 <p align="justify">
-Link prediction is a fundamental technique for inferring missing facts in knowledge graphs. 
-Under an inductive setting, it aims to predict relationships involving nodes not present during 
-training, making it especially valuable for dynamic and large-scale applications. While graph 
-neural network-based methods represent a common approach, they often suffer from two key 
-shortcomings: over smoothing and high computational cost with increased neighborhood 
-depth, limiting their scalability, and a lack of rigorous evaluation on non-English datasets, 
-leaving their cross-lingual generalizability in question. To address these challenges, we propose 
-ILP-SAGE, a novel framework for inductive link prediction. ILP-SAGE employs a columnar 
-data storage scheme to enable fast subgraph sampling and efficient processing by graph 
-networks. A controlled random sampling mechanism extracts relevant subgraphs, which are 
-then encoded into node embeddings using a GraphSAGE-based model. This design facilitates 
-controlled graph expansion and produces embeddings that effectively combine structural and 
-feature information, balancing accuracy with computational efficiency. We conduct a 
-comprehensive evaluation of ILP-SAGE using a suite of 27 benchmarks (13 transductive and 
-14 inductive) derived from prominent English-language datasets WN18RR, FB15K-237, and 
-NELL-995, and the Persian-language dataset PersianILP. Results demonstrate that ILP-SAGE 
-achieves competitive predictive performance while significantly reducing runtime. For 
-instance, on version 4 of the NELL-995 dataset, the proposed framework achieves a 3.52-point 
-improvement in AUC-PR over recent state-of-the-art methods and reduces the training time 
-from 1705.5 minutes to 2.28 minutes compared to GraIL. These results confirm the suitability 
-of the proposed framework for accurate and scalable link prediction in large, heterogeneous, 
-and multilingual knowledge graphs. The complete source code and documentation are 
-available at: https://github.com/mohammadRahimi1993/ILP_SAGE. 
+
+Link prediction is a fundamental technique for inferring missing facts in knowledge graphs.
+Under an inductive setting, it aims to predict relationships involving nodes not present during
+training, making it especially valuable for dynamic and large-scale applications. While graph
+neural network-based methods represent a common approach, they often suffer from two key
+shortcomings: over smoothing and high computational cost with increased neighborhood
+depth, limiting their scalability, and a lack of rigorous evaluation on non-English datasets,
+leaving their cross-lingual generalizability in question. To address these challenges, we propose
+ILP-SAGE, a novel framework for inductive link prediction. ILP-SAGE employs a columnar
+data storage scheme to enable fast subgraph sampling and efficient processing by graph
+networks. A controlled random sampling mechanism extracts relevant subgraphs, which are
+then encoded into node embeddings using a GraphSAGE-based model. This design facilitates
+controlled graph expansion and produces embeddings that effectively combine structural and
+feature information, balancing accuracy with computational efficiency. We conduct a
+comprehensive evaluation of ILP-SAGE using a suite of 27 benchmarks (13 transductive and
+14 inductive) derived from prominent English-language datasets WN18RR, FB15K-237, and
+NELL-995, and the Persian-language dataset PersianILP. Results demonstrate that ILP-SAGE
+achieves competitive predictive performance while significantly reducing runtime. For
+instance, on version 4 of the NELL-995 dataset, the proposed framework achieves a 3.52-point
+improvement in AUC-PR over recent state-of-the-art methods and reduces the training time
+from 1705.5 minutes to 2.28 minutes compared to GraIL. These results confirm the suitability
+of the proposed framework for accurate and scalable link prediction in large, heterogeneous,
+and multilingual knowledge graphs.
 </p>
 
 # 🛠️ Environment Setup Guide (Improved & GitHub‑Ready)
