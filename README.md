@@ -1,5 +1,6 @@
 ## 📚 ILP-SAGE: A Sampling-Based Framework for Scalable Inductive Link Prediction 
 
+## Abstract
 <p align="justify">
 Link prediction is a fundamental technique for inferring missing facts in knowledge graphs. 
 Under an inductive setting, it aims to predict relationships involving nodes not present during 
