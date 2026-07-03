@@ -1,4 +1,4 @@
-## 📚 ILP-SAGE: A Sampling-Based Framework for Scalable Inductive Link Prediction
+# 📚 ILP-SAGE: A Sampling-Based Framework for Scalable Inductive Link Prediction
 
 > **Published in Neurocomputing (2026)**
 
@@ -28,70 +28,109 @@ improvement in AUC-PR over recent state-of-the-art methods and reduces the train
 from 1705.5 minutes to 2.28 minutes compared to GraIL. These results confirm the suitability
 of the proposed framework for accurate and scalable link prediction in large, heterogeneous,
 and multilingual knowledge graphs.
+
 </p>
 
-# 🛠️ Environment Setup Guide (Improved & GitHub‑Ready)
-This guide provides a clean, structured, and GitHub‑friendly setup process for building a Python 3.12 environment with Jupyter Notebook, along with essential machine learning and graph processing libraries.
+---
+
+# 🚀 Installation
+
+## Prerequisites
+
+- Python 3.12
+- Git
+- Jupyter Notebook (optional, for interactive experiments)
 
 ---
 
-## 📦 1. Build the Base Environment
+## 1. Clone the Repository
 
 ```bash
-docker pull python:3.12
-su
-apt update
-apt install sudo
-apt install python3
-apt install python3-pip
-apt install nano
-echo 'print("Mohammad-Rahimi")' > test.py
-apt install jupyter
-apt update && apt install -y git
+git clone https://github.com/mohammadRahimi1993/ILP_SAGE.git
+cd ILP_SAGE
 ```
 
 ---
-## 🧪 2. Create and Configure a Virtual Environment
+
+## 2. Create a Virtual Environment
+
 ```bash
-# Create the virtual environment
 python3 -m venv myenv
-
-# Activate it
 source myenv/bin/activate
-
-# Upgrade pip and install the Jupyter kernel
-python3 -m pip install --upgrade pip
-python3 -m pip install ipykernel
-python3 -m ipykernel install --user --name=dgl_env --display-name "Python (dgl_env)"
 ```
 
 ---
-## 📚 3. Install Required Python Packages
+
+## 3. Upgrade pip
+
+```bash
+python -m pip install --upgrade pip
+```
+
+---
+
+## 4. Install Dependencies
 
 ```bash
 pip install \
-  numpy==1.26.4 \
-  torch==2.2.0 \
-  torchvision==0.17.0 \
-  torchaudio==2.2.0 \
-  torcheval \
-  dgl -f https://data.dgl.ai/wheels/torch-2.2/repo.html \
-  torchmetrics==1.2.1 \
-  transformers==4.38.0 \
-  scikit-learn==1.6.1 
+    numpy==1.26.4 \
+    torch==2.2.0 \
+    torchvision==0.17.0 \
+    torchaudio==2.2.0 \
+    torcheval \
+    dgl -f https://data.dgl.ai/wheels/torch-2.2/repo.html \
+    torchmetrics==1.2.1 \
+    transformers==4.38.0 \
+    scikit-learn==1.6.1
 ```
 
-## 📊 4.Running GraphSAGE and ILP-SAGE Frameworks
-Clone the repository from GitHub and navigate to the code directory.
+---
+
+## 5. (Optional) Register a Jupyter Kernel
+
 ```bash
-git clone https://github.com/mohammadRahimi1993/ILP_SAGE
-cd ILP-SAGE-Version2
+pip install ipykernel
+
+python -m ipykernel install \
+    --user \
+    --name ilp_sage \
+    --display-name "Python (ILP-SAGE)"
 ```
 
-Run ILP-SAGE Framework And GraphSAGE-based Framework
+---
+
+# ▶️ Running Experiments
+
+The repository provides implementations of both **ILP-SAGE** and the **GraphSAGE-based baseline**.
+
+Run the following scripts according to your experiment:
+
 ```bash
 python main_analysis.py
+```
+
+```bash
 python run_experiments.py
+```
+
+```bash
 python GraphSAGE.py
 ```
 
+---
+
+# 📦 Dependencies
+
+- PyTorch 2.2
+- DGL
+- NumPy
+- Transformers
+- TorchMetrics
+- TorchEval
+- Scikit-learn
+
+---
+
+# 📄 Citation
+
+If you use this repository in your research, please cite the accompanying Neurocomputing paper.
