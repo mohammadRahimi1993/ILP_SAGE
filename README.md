@@ -5,7 +5,6 @@
 ## Abstract
 
 <p align="justify">
-
 Link prediction is a fundamental technique for inferring missing facts in knowledge graphs.
 Under an inductive setting, it aims to predict relationships involving nodes not present during
 training, making it especially valuable for dynamic and large-scale applications. While graph
@@ -28,7 +27,6 @@ improvement in AUC-PR over recent state-of-the-art methods and reduces the train
 from 1705.5 minutes to 2.28 minutes compared to GraIL. These results confirm the suitability
 of the proposed framework for accurate and scalable link prediction in large, heterogeneous,
 and multilingual knowledge graphs.
-
 </p>
 
 ---
