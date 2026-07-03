@@ -1,4 +1,4 @@
-# 📚 ILP-SAGE: A Sampling-Based Framework for Scalable Inductive Link Prediction 
+## 📚 ILP-SAGE: A Sampling-Based Framework for Scalable Inductive Link Prediction 
 
 ## Abstract 
 <div align="justify">
