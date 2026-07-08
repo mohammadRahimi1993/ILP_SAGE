@@ -132,10 +132,17 @@ python GraphSAGE.py
 # 📄 Citation
 
 If you use this repository in your research, please cite the accompanying Neurocomputing paper.
+## Citation
+
+If you use this repository, please cite:
+```bibtex
 @article    {rahimi2026ilpsage,
   title   = {ILP-SAGE: A Sampling-Based Framework for Scalable Inductive Link Prediction},
   author  = {Rahimi, Mohammad and Fatemi, Afsaneh and Baraani, Ahmad},
   journal = {Neurocomputing},
   year    = {2026},
-  note    = {In Press, Journal Pre-proof, Article 134429, Available online 6 July 2026}
+  month   = jul,
+  note    = {In Press, Journal Pre-proof, Available online 6 July 2026},
+  pages   = {134429}
 }
+
