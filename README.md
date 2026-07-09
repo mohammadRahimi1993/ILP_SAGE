@@ -140,9 +140,9 @@ If you use this repository, please cite:
   title   = {ILP-SAGE: A Sampling-Based Framework for Scalable Inductive Link Prediction},
   author  = {Rahimi, Mohammad and Fatemi, Afsaneh and Baraani, Ahmad},
   journal = {Neurocomputing},
+  volume  = {699},
+  pages   = {134429},
   year    = {2026},
-  month   = jul,
-  note    = {In Press, Journal Pre-proof, Available online 6 July 2026},
-  pages   = {134429}
+  month   = jul
 }
 
